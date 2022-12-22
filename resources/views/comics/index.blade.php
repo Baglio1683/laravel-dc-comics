@@ -18,6 +18,7 @@
                         <th scope="col">Immagine</th>
                         <th scope="col">Prezzo</th>
                         <th scope="col">Serie</th>
+                        <th scope="col">Data</th>
                         <th scope="col">Tipo</th>
                     </tr>
                 </thead>
@@ -26,6 +27,8 @@
                         <tr>
                             <th scope="row">{{ $comic->title }}</th>
                             <td>{{ $comic->description }}</td>
+                            <td><img src="{{ $comic->thumb }}" alt=""></td>
+                            <td>{{ $comic->price }}</td>
                             <td>{{ $comic->series }}</td>
                             <td>{{ $comic->sale_date }}</td>
                             <td>{{ $comic->type }}</td>
